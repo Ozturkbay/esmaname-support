@@ -6,7 +6,7 @@ URL and Support URL required by App Store Connect. **Turkish is the primary
 language** (site root); English lives under `/en/`.
 
 - **Developer:** Fatih Öztürkbay
-- **Support email:** `ESMA_SUPPORT_EMAIL` (placeholder — see below)
+- **Support email:** `feesheet.support@icloud.com` (placeholder — see below)
 
 It is a plain static site: HTML and one CSS file. No framework, no build
 step, no JavaScript, no external fonts, scripts or stylesheets.
@@ -56,7 +56,7 @@ grep -rl "https://ozturkbay.github.io/esmaname-support/" --include='*.html' .
 
 ## Before publishing: set the support email
 
-Every email address is the literal placeholder `ESMA_SUPPORT_EMAIL` (in
+Every email address is the literal placeholder `feesheet.support@icloud.com` (in
 `mailto:` links and visible text). Files containing it:
 
 - `index.html`
@@ -71,9 +71,9 @@ Replace it in the HTML files once the address is chosen, then confirm none
 remain:
 
 ```sh
-grep -rl ESMA_SUPPORT_EMAIL --include='*.html' . \
-  | xargs sed -i '' 's/ESMA_SUPPORT_EMAIL/you@example.com/g'
-grep -rn ESMA_SUPPORT_EMAIL --include='*.html' .
+grep -rl feesheet.support@icloud.com --include='*.html' . \
+  | xargs sed -i '' 's/feesheet.support@icloud.com/you@example.com/g'
+grep -rn feesheet.support@icloud.com --include='*.html' .
 ```
 
 ## Publish on GitHub Pages
