@@ -109,20 +109,28 @@ Then open http://localhost:8000/. (Opening the files directly with
 
 The privacy policies show their date near the top:
 
-- `gizlilik/index.html` — `Son güncelleme: 19 Ekim 2026`
-- `en/privacy/index.html` — `Last updated: October 19, 2026`
+- `gizlilik/index.html` — `Yürürlük tarihi ve son güncelleme: 20 Ekim 2026`
+- `en/privacy/index.html` — `Effective date and last updated: 20 October 2026`
 
 When the policy changes, edit both lines together and keep the Turkish and
 English texts aligned section by section. Turkish month names: Ocak, Şubat,
 Mart, Nisan, Mayıs, Haziran, Temmuz, Ağustos, Eylül, Ekim, Kasım, Aralık.
 
-The policy describes what the app does today: free download with a one-time,
-non-consumable Premium in-app purchase (no subscription, Family Sharing not
-enabled); no accounts, ads, analytics, tracking or server; counts, favorites,
+The policy describes what the app does since 20 October 2026: free download
+with Google AdMob ads (interstitials only at the start or end of a zikir
+session, never while counting; rewarded ads only on "Reklam izle", unlocking
+one customization for 24 hours; ad content limited to the "G" rating) and a
+one-time, non-consumable Premium in-app purchase
+(`com.ozturkbay.esmaname.premium`, ₺149,99 in Türkiye; no subscription,
+Family Sharing not enabled) that removes all ads; Google UMP consent where
+required, then Apple's App Tracking Transparency prompt; no account, no
+server and no analytics of the developer's own; counts, favorites,
 Zikirlerim, history and settings stored only on the device (SQLite and the
-iOS Keychain); an optional, locally scheduled daily reminder; Diyanet source
-pages opened in the browser only on "Kaynağı Aç". If the app adds iCloud
-sync, an account, an SDK, analytics, push notifications, a server or a new
+iOS Keychain), plus an on-device ad-frequency counter and rewarded-unlock
+expiry; an optional, locally scheduled daily reminder (free); Diyanet source
+pages opened in the browser only on "Kaynağı Aç". The data Google's SDKs may
+collect is listed in section 5 of both privacy pages. If the app adds iCloud
+sync, an account, another SDK, push notifications, a server or a new
 permission, review both privacy pages and the related Support sections before
 releasing that version.
 
@@ -139,8 +147,9 @@ Colors follow the Esmaname palette: cream background (`#F6F3EA`), deep green
 (`#0F4A3A`) for links and focus, gold (`#C7A35A`) as an accent for rules and
 highlights only (never body text). Dark appearance follows
 `prefers-color-scheme`: background `#0E1512`, primary `#78A48F`, accent
-`#D3B36E`. Copy is factual and modest: no spiritual claims, prices not
-hard-coded ("App Store'da gösterilen fiyat").
+`#D3B36E`. Copy is factual and modest: no spiritual claims. The Premium price
+is stated as ₺149,99 for Türkiye, with "App Store'da gösterilen fiyat" for
+other countries; update all pages if the price changes.
 
 ## Privacy of this website
 
